@@ -15,8 +15,9 @@ FONT SIZE SYSTEM (PX)
 0.64rem/10.24px
 0.512rem/8.19px
 
-MAIN COLOR: #228BE6 
-GREY COLOR: #3a405a
+MAIN COLOR: #1971c2
+LIGHTER: #228be6
+GREY COLOR: #343a40
 LIGHT GREY: #868e96
 
 */
@@ -35,7 +36,7 @@ LIGHT GREY: #868e96
 
 body {
   font-family: "Inter", sans-serif;
-  color: #3a405a;
+  color: #343a40;
 }
 
 .container {
@@ -54,8 +55,9 @@ img {
 1.953rem/31.25px
 1.563rem/25.00px */
 
+/* 24 / 32 / 48 */
 h1 {
-  margin-bottom: 24px;
+  margin-bottom: 48px;
   font-size: 48.83px;
   letter-spacing: -0.5px;
   line-height: 1.1;
@@ -81,7 +83,7 @@ p {
 }
 
 .hero-text p {
-  margin-bottom: 32px;
+  margin-bottom: 48px;
 }
 
 button {
@@ -128,18 +130,18 @@ nav {
 header a:link,
 header a:visited {
   text-decoration: none;
-  color: #3a405a;
+  color: #343a40;
 }
 
 header a:hover,
 header a:active {
-  color: #3a405a:
+  color: #343a40:
 }
 
 .features-icon {
-  width: 24px;
-  height: 24px;
-  stroke: #3a405a;
+  width: 36px;
+  height: 36px;
+  stroke: #1971c2;
   /* 12 / 16 / 24  */
   margin-bottom: 16px;
 }
@@ -171,12 +173,17 @@ margin-bottom: 64px;
   margin-bottom: 128px;
 }
 
+.hero img {
+  border-radius: 15px;
+}
+
 /* HERO  */
 @media (min-width: 600px) {
   
   .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
   }
 
 }
@@ -185,6 +192,7 @@ margin-bottom: 64px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 20px;
 }
 
 /* FEATURES */
@@ -209,10 +217,11 @@ margin-bottom: 64px;
 .stars-icon {
   width: 24px;
   height: 24px;
+  stroke: #1971c2;
 }
 
 .stars-filled {
-  fill: #3a405a;
+  fill: #1971c2;
 }
 
 .review-stars {
@@ -257,6 +266,9 @@ margin-bottom: 64px;
 .reviews {
   margin-bottom: 128px;
 }
+
+
+
 
 /* PROFILE CARDS */
 
@@ -326,9 +338,9 @@ margin-bottom: 64px;
 
 
 .accordion details div {
-	border-left: 2px solid #3a405a;
-	border-right: 2px solid #3a405a;
-	border-bottom: 2px solid #3a405a;
+	border-left: 2px solid #343a40;
+	border-right: 2px solid #343a40;
+	border-bottom: 2px solid #343a40;
 	padding: 1.5em;
 }
 
@@ -349,7 +361,7 @@ margin-bottom: 64px;
 }
 
 .accordion summary {
-	border: 2px solid #3a405a;
+	border: 2px solid #343a40;
 	padding: .75em 1em;
 	cursor: pointer;
 	position: relative;
@@ -364,7 +376,7 @@ margin-bottom: 64px;
 	content: "↓";
 	width: 1.75rem;
 	height: 1.75rem;
-	background-color: #3a405a;
+	background-color: #343a40;
 	color: #FFF;
 	display: inline-flex;
 	justify-content: center;
@@ -410,7 +422,7 @@ margin-bottom: 64px;
 .icon-footer-contact {
   width: 16px;
   height: 16px;
-  stroke: #3a405a;
+  stroke: #343a40;
 }
 
 .flex-phone, .flex-email {
@@ -508,14 +520,14 @@ margin-bottom: 64px;
 
 .form-input {
   padding: 5px 10px;
-  border: 1px solid #3a405a25 ;
+  border: 1px solid #343a40 ;
   width: 200px;
   margin-bottom: 8px;
   border-radius: 8px;
 }
 
 .form-input::placeholder {
-  color: #3a405a;
+  color: #343a40;
 }
 
 .form-button {
@@ -547,4 +559,31 @@ margin-bottom: 64px;
   }
 }
 
+
+/* GENERAL STYLING */
+
+/* GROTE EN KLEINE BUTTON */
+.hero-text button,
+.features-button,
+.reviews button,
+.profile-card-btn,
+.faq button {
+  color: #fff;
+  background-color: #1971c2;
+  font-size: 16px;
+  font-weight: 500px;
+  padding: 16px 32px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  border: 0;
+}
+
+/* KLEINE BUTTON */
+.reviews button,
+.profile-card-btn,
+.faq button,
+.features-button {
+  font-size: 12px;
+  padding: 12px 24px;
+}
 
