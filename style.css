@@ -39,6 +39,10 @@ body {
   color: #343a40;
 }
 
+header {
+  margin-top: 20px;
+}
+
 .container {
   width: 90%;
   max-width: 960px;
@@ -48,6 +52,7 @@ body {
 img {
   width: 100%;
   max-width: fit-content;
+  margin-top: 25px;
 }
 
 /* 3.052rem/48.83px
@@ -57,8 +62,8 @@ img {
 
 /* 24 / 32 / 48 */
 h1 {
-  margin-bottom: 48px;
-  font-size: 48.83px;
+  margin-bottom: 32px;
+  font-size: 44px;
   letter-spacing: -0.5px;
   line-height: 1.1;
 }
@@ -83,7 +88,8 @@ p {
 }
 
 .hero-text p {
-  margin-bottom: 48px;
+  margin-bottom: 32px;
+  font-size: 18px;
 }
 
 button {
@@ -584,9 +590,9 @@ margin-bottom: 64px;
   background-color: #1971c2;
   font-size: 16px;
   font-weight: 500px;
-  padding: 16px 32px;
+  padding: 12px 20px;
   text-transform: uppercase;
-  border-radius: 100px;
+  border-radius: 15px;
   border: 0;
 }
 
